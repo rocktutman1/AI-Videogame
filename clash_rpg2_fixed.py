@@ -188,19 +188,8 @@ SECRET_FINAL_ARENA = {
     "desc": "A forgotten arena sealed behind royal magic.",
     "encounters": ["archer_queen", "mega_knight", "golem"],
     "loot": ["magic_tome"],
-    "art": [                                                                                                                                                
-        r"-@@@@@@@@@@@@@@*#::+#@                                  .:+#@@@     @@@@@@@@@@@@@@@@@%",                      
-        r"-@@@@@@@@@@@@@@@            . .                             ::-**@ @@@@@ @@@@@@@@@@@@+.",                     
-        r"-@@@@@@@@@@@@                                                   .-  %@@@@@@@@@@@@@@@@+",                      
-        r"-@@@@@@@@@@@@@@                                                     =@@@@@@@@@@@@@@@@-",                      
-        r"=@@@@@@@@@@%=                                                       .-:-= @@@@@@@@@@@+",                      
-        r"=@@@@@@@@@@#   ..                                                         @@@@@@@@@@@+.",                     
-        r"=@@@@@@@@@@#=                                                              *%%@@@@@@@+",                      
-        r"#@@@@@@@@@*                      ::-.          .#*#.                        :#@%@@@#",                       
-        r"=@@@@@@@@      =:+#@#+---------+#@@@#-        :#@@@#+--:-----+#@@#=-.        +@@@@@+",                       
-        r":@@@@@@@  -.  @@#+--:----+#@@@@@@@@@@#.      -#@@@@@@@@@@#+--------+++       :@@@@#.",                       
-        r".#@@@@@@ *  +%%+.         :%@@@@@@@@@@+     -#@@@@@@@@#+-.          :##:      =#@@+",                        
-        r"-#@@@@@   :++.            .=#@@@@@@@@#.   .#@@@@@@@#+               .++:      #@#.",                        
+    "art": [                                                                                                                                                                
+            r"-#@@@@@   :++.            .=#@@@@@@@@#.   .#@@@@@@@#+               .++:      #@#.",                        
             r"+@@@@@@ *+-            :   #@@@@@@@@@+   +@@@@@@@@#    -==           +%+    +%@+",                         
             r"-@@@@  @#:       .-...-....+@@@@@@@@@#:  #@@@@@@@@#+-+++:+++-:-       *#=     @:",                         
             r"#@@@ @#-     -+==-.       =+%@@@@@@@@- -@@@@@@@@#+-:      @%#**+      -+.  @@@-",                         
@@ -910,9 +899,8 @@ def enemy_ai_move_and_act(e_idx, enemy, state, player, player_pos, enemies, ui, 
     if sp == "phase" and random.random() < 0.2:
         state["phased"] = True
         messages.append(f"{enemy['name']} fades and will evade next hit.")
-    elif sp == "phase":
-        state["phased"] = False
-        messages.append(f"{enemy['name']} de-fades")
+    else:
+        state["phaesd"] = False
     if sp == "swarm" and random.random() < 0.2:
         state["swarm_rage"] = True
     else:
