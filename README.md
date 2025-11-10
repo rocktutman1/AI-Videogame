@@ -18,9 +18,11 @@ Repository: https://github.com/rocktutman1/AI-Videogame
 
 Clone the repo and run from the project root:  
 
-git clone https://github.com/rocktutman1/AI-Videogame.git
-cd AI-Videogame
-python3 clash_rpg2_fixed.py
+>git clone https://github.com/rocktutman1/AI-Videogame.git
+>
+>cd AI-Videogame
+>
+>python3 clash_rpg2_fixed.py
 
 ## 🕹️ Controls
 
